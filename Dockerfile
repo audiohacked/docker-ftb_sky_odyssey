@@ -2,10 +2,10 @@
 FROM openjdk:8-jre-alpine
 MAINTAINER Sean Nelson <audiohacked@gmail.com>
 
-ARG MODPACK="FTBSkyOdyssey" \
-    FTB_VERSION="1_0_0" \
-    BASE_URL="http://ftb.cursecdn.com/FTB2/modpacks/${MODPACK}" \
-    SERVER_FILE="${MODPACK}Server.zip"
+ARG MODPACK="FTBSkyOdyssey"
+ARG FTB_VERSION="1_0_0"
+ARG BASE_URL="http://ftb.cursecdn.com/FTB2/modpacks/${MODPACK}"
+ARG SERVER_FILE="${MODPACK}Server.zip"
 
 ENV SERVER_PORT=25565
 
